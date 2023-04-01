@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- get: datos no sensibles -->
+    <!-- post: datos sensibles -->
+    <form method="post" action="backend/form.php" enctype="multipart/form-data">
+        <label for="username">Nombre Usuario</label>
+        <input type="text" name="username" id="username" placeholder="Por ejemplo GOGO" value="Hola mundo" />
+        <br>
+        <select name="selectPais" id="selectPais" multiple>
+            <option value="es">España</option>
+            <option value="co">Colombia</option>
+            <option value="pe">Peru</option>
+            <option value="mx">Mexico</option>
+            <option value="ch">Chile</option>
+            <option value="ar">Argentina</option>
+            <option value="cu">Cuba</option>
+            <option value="pu">Puerto Rico</option>
+        </select>
+        <br>
+        <input type="radio" name="comida" id="arroz" value="arroz" />
+        <label for="arroz">Arroz</label>
+        <input type="radio" name="comida" id="pollo" value="pollo" />
+        <label for="pollo">Pollo</label>
+        <br>
+        <input type="checkbox" name="terminos" id="terminos" value="yes">
+        <label for="terminos">Acepto los terminos y condiciones</label>
+        <br>
+        <input type="range" name="porcentaje" min="0" max="100">
+        <br>
+        <textarea name="comentario" id="comentario" cols="30" rows="10" minlength="10" maxlength="500" placeholder="Escribe aqui tu comentario" required></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
